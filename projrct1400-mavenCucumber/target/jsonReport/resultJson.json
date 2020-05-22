@@ -1,0 +1,74 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-05-22T22:28:14.948Z",
+        "line": 3,
+        "name": "download catalog of \"Soft Starters\" from \"Drivers and soft Starters\"",
+        "description": "",
+        "id": "download-online-catalog;download-catalog-of-\"soft-starters\"-from-\"drivers-and-soft-starters\"",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2404000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "open the home page of automationdirect.com",
+            "match": {
+              "location": "stepDefinitions.LoginStepDef.open_the_home_page_of_automationdirect_com()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "navigate to the \"Soft Starters\" from \"Drivers and soft Starters\" in \"Online Catalog\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Soft Starters\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Drivers and soft Starters\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"Online Catalog\"",
+                  "offset": 68
+                }
+              ],
+              "location": "stepDefinitions.LoginStepDef.navigate_to_the_from_in(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4004000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify the download",
+            "match": {
+              "location": "stepDefinitions.LoginStepDef.verify_the_download()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Download online catalog",
+    "description": "",
+    "id": "download-online-catalog",
+    "keyword": "Feature",
+    "uri": "file:src/features/Login.feature",
+    "tags": []
+  }
+]
